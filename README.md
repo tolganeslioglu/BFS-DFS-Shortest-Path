@@ -40,28 +40,34 @@ A Java application that compares **Breadth-First Search (BFS)** and **Depth-Firs
    java -jar ShortestPathFinder.jar
     ```
 
-📊 Performance Snapshot
+## 📊 Performance Snapshot
 
 Route (sample)	DFS (ms)	BFS (ms)
 Samsun → Istanbul	0.0076	0.0079
 Batman → … → Bursa	0.32	0.38
 In most test cases BFS edged out DFS, but results converge once pruning is enabled. On the original 18×18 matrix every experiment finished in <1 s on an 8 GB laptop. 
 
-⚠️ Known Limitations
+## ⚠️ Known Limitations
 
 Memory Pressure in Un-pruned BFS – Removing pruning on dense graphs may exhaust heap space. 
 Algorithmic Differences – BFS uses ArrayList, DFS uses LinkedList; a unified data-structure choice might yield fairer timing. 
-📚 Dataset
+
+## 📚 Dataset
 
 Turkish cities.csv — 18 × 18 symmetric adjacency matrix; 99999 denotes no direct road. Feel free to swap in your own CSV with the same layout.
 
-👥 Contributors
+## 👥 Contributors
 
 Name	ID	Role
 Tolga Neslioğlu	042301100	DFS, CSV import, report
+
 Cem Alp Özer	042301097	BFS, data structures, GUI
+
 Efe Ersöz	042202008	Complexity analysis
+
 Yağmur Kaykaç	041801112	Complexity analysis, presentation
+
 Beyza Zerdalı	042201050	Complexity analysis
+
 
 Task breakdown is detailed in the report’s labour table. 
